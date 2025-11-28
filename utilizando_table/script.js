@@ -19,6 +19,11 @@ function realizarOperacao(operacao) {
             case 'multiplicacao':
                 resultado = num1 * num2;
                 break;
+            
+            case 'subtracao':
+                resultado = num1 - num2;
+                break;
+
 
             default:
                 resultado = "Operação inválida!";
