@@ -287,3 +287,104 @@ button[type="reset"]:hover {
         max-width: 90%;
     }
 }
+/* ========================================================================= */
+/* ESTILOS DA CALCULADORA (calculadora.html) */
+/* ========================================================================= */
+
+body.calculadora-body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.calculadora {
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #bdc3c7;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #fefefe;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.calculadora:hover {
+    transform: scale(1.03);
+}
+
+#visor {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 8px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.botoes button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #e67e22;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botoes button:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+.botoes button:active {
+    transform: scale(0.97);
+}
+
+/* Botão especial C */
+.botoes button:nth-child(13) {
+    background-color: #c0392b;
+}
+
+.botoes button:nth-child(13):hover {
+    background-color: #e74c3c;
+}
+
+/* Botão = */
+.botoes button:nth-child(15) {
+    background-color: #27ae60;
+}
+
+.botoes button:nth-child(15):hover {
+    background-color: #2ecc71;
+}
+.calculadora-simples label {
+    font-weight: bold;
+    color: #444;
+}
+
+.calculadora-simples input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    font-size: 1em;
+}
+
+.calculadora-simples button {
+    width: 30%;
+    margin: 5px;
+}
+
